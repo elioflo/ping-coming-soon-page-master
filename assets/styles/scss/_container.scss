@@ -1,0 +1,44 @@
+.container {
+    padding: 1.5rem;
+    font-size: .8rem;
+    &__text {
+        text-align: center;
+        margin-top: 0;
+        font-size: .8rem;
+    }
+
+    &__img {
+        width: 100%;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    &__input, &__button {
+        display: block;
+        margin: auto;
+        width: 288px;
+        padding: .8rem 0;
+    } 
+
+    &__input {
+        border: 1px solid rgba(var(--primary-blue-rgb), .5);
+        border-radius: 2rem;
+        margin-top: 2rem;
+        &::placeholder {
+            color: rgba(var(--primary-blue-rgb), .5);
+            padding-left: 2rem;
+        }
+    }
+
+    &__button {
+        border: 1px solid var(--primary-blue);
+        border: none;
+        font-weight: 600;
+        margin-top: .7rem;
+        color: white;
+        background-color: var(--primary-blue);
+        border-radius: 2rem;
+    }
+
+
+}

@@ -1,0 +1,21 @@
+.header {
+
+    &__logo {
+        display: block;
+        width: 55px;
+        margin: 6rem auto 3rem auto;
+    }
+
+    &__title {
+        margin: 0;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: var(--neutral-gray);
+
+        & > span {
+            color: black;
+            font-weight: 700;
+        }
+    }
+}
