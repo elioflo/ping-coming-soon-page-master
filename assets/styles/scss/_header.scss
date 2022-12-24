@@ -14,8 +14,18 @@
         color: var(--neutral-gray);
 
         & > span {
-            color: black;
+            color: var(--very-dark-blue);
             font-weight: 700;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &__logo {
+            width: 100px;
+            margin: 5rem auto 3rem auto;
+        }
+        &__title {
+            font-size: 3.2rem;
         }
     }
 }
