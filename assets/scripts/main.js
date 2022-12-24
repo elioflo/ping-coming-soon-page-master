@@ -12,14 +12,14 @@ function validateForm(e){
     }
     
     if(input.checkValidity()){
-        message.classList.remove('container__message--invalid')
-        message.classList.add('container__message--hidden')
-        input.classList.remove('container__input--invalid')
+        message.classList.remove('header__message--invalid')
+        message.classList.add('header__message--hidden')
+        input.classList.remove('header__input--invalid')
     }else{
         message.textContent = errorMessage
-        message.classList.remove('container__message--hidden')
-        message.classList.add('container__message--invalid')
-        input.classList.add('container__input--invalid')
+        message.classList.remove('header__message--hidden')
+        message.classList.add('header__message--invalid')
+        input.classList.add('header__input--invalid')
     }
 }
 

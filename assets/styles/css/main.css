@@ -322,13 +322,18 @@ body {
   font-family: "Libre Franklin", sans-serif;
 }
 
+.header {
+  font-size: 0.8rem;
+  padding: 1.5rem;
+  padding-bottom: 0;
+}
 .header__logo {
   display: block;
-  width: 55px;
-  margin: 6rem auto 3rem auto;
+  width: 60px;
+  margin: 4rem auto 2rem auto;
 }
 .header__title {
-  margin: 0;
+  margin-bottom: 1.5rem;
   text-align: center;
   font-weight: 300;
   font-size: 1.5rem;
@@ -338,121 +343,115 @@ body {
   color: var(--very-dark-blue);
   font-weight: 700;
 }
-@media screen and (min-width: 768px) {
-  .header__logo {
-    width: 100px;
-    margin: 5rem auto 3rem auto;
-  }
-  .header__title {
-    font-size: 3.2rem;
-  }
-}
-
-.container {
-  padding: 1.5rem;
-  padding-bottom: 0;
-  font-size: 0.8rem;
-}
-.container__text {
-  margin-top: 0;
+.header__text {
+  margin-bottom: 2rem;
   text-align: center;
   color: var(--very-dark-blue);
   font-weight: 300;
 }
-.container__img {
-  margin-bottom: 6rem;
-  margin-top: 2.5rem;
-  width: 100%;
-}
-.container__input, .container__button {
+.header__input, .header__button {
   display: block;
   margin: auto;
   min-width: 288px;
   padding: 0.8rem 0;
   width: 88%;
 }
-.container__input {
+.header__input {
   border-radius: 2rem;
   border: 1px solid rgba(var(--neutral-gray-rgb), 0.5);
-  margin-top: 2rem;
-  margin-bottom: 0.7rem;
   box-sizing: border-box;
   padding-left: 2rem;
 }
-.container__input:focus {
+.header__input:focus {
   outline: none;
 }
-.container__input::placeholder {
+.header__input::placeholder {
   color: rgba(var(--neutral-gray-rgb), 0.5);
 }
-.container__input--invalid {
+.header__input--invalid {
   border: 1px solid var(--secondary-light-red);
 }
-.container__input--invalid::placeholder {
+.header__input--invalid::placeholder {
   color: var(--secondary-light-red);
 }
-.container__message {
+.header__message {
   font-style: italic;
   text-align: center;
-  margin-top: 0;
+  margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   font-size: 0.7rem;
 }
-.container__message--invalid {
+.header__message--invalid {
   display: block;
   color: var(--secondary-light-red);
 }
-.container__message--hidden {
+.header__message--hidden {
   display: none;
 }
-.container__button {
+.header__button {
   background-color: var(--primary-blue);
   border-radius: 2rem;
   border: 1px solid var(--primary-blue);
   color: white;
   font-weight: 600;
-  margin-top: 0;
+  margin-top: 0.6rem;
   box-shadow: 0 1px 3px var(--primary-blue);
 }
+.header__img {
+  margin-top: 2.5rem;
+  margin-bottom: 6rem;
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
-  .container {
+  .header {
     max-width: 720px;
     margin: auto;
     font-size: 1rem;
   }
-  .container__text {
+  .header__logo {
+    width: 98px;
+    margin: 3rem auto 3rem auto;
+  }
+  .header__title {
+    font-size: 3.2rem;
+  }
+  .header__text {
     font-size: 1.3rem;
     margin-bottom: 2.5rem;
   }
-  .container__img {
-    margin-bottom: 5rem;
+  .header__img {
+    margin-bottom: 4rem;
     margin-top: 4rem;
     width: 100%;
   }
-  .container__form {
+  .header__form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     width: 100%;
   }
-  .container__input {
+  .header__input {
     order: 1;
     min-width: unset;
     width: 65%;
     margin: 0;
   }
-  .container__button {
+  .header__button {
     order: 2;
     width: 32%;
     min-width: unset;
     margin: 0;
   }
-  .container__input, .container__button {
+  .header__button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .header__input, .header__button {
     padding-top: 1.1rem;
     padding-bottom: 1.1rem;
   }
-  .container__message {
+  .header__message {
     order: 3;
     margin: 0;
     width: 100%;
@@ -461,7 +460,7 @@ body {
     margin-top: 0.5rem;
     font-size: 0.8rem;
   }
-  .container__message--hidden {
+  .header__message--hidden {
     visibility: hidden;
     display: block;
   }
